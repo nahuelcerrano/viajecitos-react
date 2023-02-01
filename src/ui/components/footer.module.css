@@ -38,3 +38,34 @@ li {
   padding: 0 10px 0;
   cursor: pointer;
 }
+
+.newsletter {
+  color: #fff;
+  background-color: var(--primary);
+  padding: 30px;
+}
+
+.newsflex {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex: wrap;
+  max-width: 1100px;
+  margin: 0 auto 0;
+}
+
+input {
+  border: none;
+  padding: 10px;
+  color: black;
+}
+
+button {
+  padding: 10px 40px;
+  margin: 0;
+  border: 0;
+  color: white;
+  background-color: green;
+  margin-left: -5px;
+  cursor: pointer;
+}
