@@ -7,7 +7,7 @@ export const PageHeader = ({ page }) => {
   const viajes = getPageByName( page )
 
   return (
-    <div>
+    <>
       {
         viajes.map( viaje => (
           <HeroBanner
@@ -16,6 +16,6 @@ export const PageHeader = ({ page }) => {
           />
         ))
       }
-    </div>
+    </>
   )
 }

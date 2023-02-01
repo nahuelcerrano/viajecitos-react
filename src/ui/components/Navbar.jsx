@@ -12,11 +12,11 @@ export const Navbar = () => {
 
         <ul className={navStyles.menu}>
           <li className={navStyles.list}>
-            <Link to="/about">Nosotros</Link>
+            <Link to="/viajes">Viajes</Link>
           </li>
 
           <li className={navStyles.list}>
-            <Link to="/viajes">Viajes</Link>
+            <Link to="/about">Nosotros</Link>
           </li>
 
           <li className={navStyles.list}>
