@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { Footer } from '../../ui/components/Footer'
 import { Navbar } from '../../ui/components/Navbar'
 import { AboutPage } from '../pages/AboutPage'
 import { HomePage } from '../pages/HomePage'
@@ -21,6 +22,8 @@ export const ViajesRoutes = () => {
           <Route path='/*' element={<Navigate to='/home' />} />
         </Routes>
       </div>
+
+      <Footer />
     </>
   )
 }

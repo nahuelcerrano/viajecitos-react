@@ -15,7 +15,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-color: #ebebeb;
-  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: 'Maven Pro', Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
 }
 
 :root {
@@ -38,4 +38,8 @@ ul {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.react-icons {
+  vertical-align: middle;
 }
