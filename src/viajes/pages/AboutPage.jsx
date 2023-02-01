@@ -1,7 +1,10 @@
 import React from 'react'
+import { PageHeader } from '../components/PageHeader'
 
 export const AboutPage = () => {
   return (
-    <div>AboutPage</div>
+    <>
+      <PageHeader page='about' />
+    </>
   )
 }

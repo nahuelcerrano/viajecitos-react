@@ -1,7 +1,10 @@
 import React from 'react'
+import { PageHeader } from '../components/PageHeader'
 
 export const TripPage = () => {
   return (
-    <div>TripPage</div>
+    <>
+      <PageHeader page='viajes' />
+    </>
   )
 }

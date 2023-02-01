@@ -1,7 +1,10 @@
 import React from 'react'
+import { PageHeader } from '../components/PageHeader'
 
 export const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+      <PageHeader page='home' />
+    </>
   )
 }
