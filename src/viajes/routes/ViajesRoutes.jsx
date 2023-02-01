@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { Navbar } from '../../ui/components/Navbar'
 import { AboutPage } from '../pages/AboutPage'
 import { HomePage } from '../pages/HomePage'
-import { OfficePage } from '../pages/OfficePage'
+import { ServicePage } from '../pages/ServicePage'
 import { TripPage } from '../pages/TripPage'
 
 export const ViajesRoutes = () => {
@@ -16,7 +16,7 @@ export const ViajesRoutes = () => {
           <Route path='home' element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='viajes' element={<TripPage />} />
-          <Route path='oficinas' element={<OfficePage />} />
+          <Route path='servicios' element={<ServicePage />} />
 
           <Route path='/*' element={<Navigate to='/home' />} />
         </Routes>

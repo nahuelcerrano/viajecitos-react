@@ -20,7 +20,7 @@ export const Navbar = () => {
           </li>
 
           <li className={navStyles.list}>
-            <Link to="/oficinas">Oficinas</Link>
+            <Link to="/servicios">Servicios</Link>
           </li>
         </ul>
 
