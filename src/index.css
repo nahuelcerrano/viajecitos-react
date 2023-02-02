@@ -71,3 +71,8 @@ html::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 4px;
 }
+
+.row {
+  max-width: 1100px;
+  margin: 0 auto 0;
+}

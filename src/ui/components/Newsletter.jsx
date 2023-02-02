@@ -4,7 +4,7 @@ import newsletter from './footer.module.css'
 export const Newsletter = () => {
   return (
     <section className={newsletter.newsletter}>
-      <div className={newsletter.newsflex}>
+      <div className={`${newsletter.newsflex} row`}>
           <h2>Newsletter Section</h2>
           <div>
             <input 

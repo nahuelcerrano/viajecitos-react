@@ -5,7 +5,7 @@ import navStyles from "./navbar.module.css";
 export const Navbar = () => {
   return (
     <div className={navStyles.header}>
-      <nav className={navStyles.navbar}>
+      <nav className={`${navStyles.navbar} row`}>
         <Link className={navStyles.logo} to="/">
           Viajecitos
         </Link>

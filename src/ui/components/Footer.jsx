@@ -11,7 +11,7 @@ export const Footer = () => {
       <Newsletter />
       <footer className={footerStyles.footer}>
         <div className={footerStyles.nav}>
-          <div className={footerStyles.container}>
+          <div className={`${footerStyles.container} row`}>
             <ul style={footerStyles.ul}>
               <li className={footerStyles.li}>
                 <Link to="/viajes">Viajes</Link>

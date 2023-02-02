@@ -13,9 +13,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   line-height: 20px;
-  margin: 0 auto 0;
-  margin: 0;
-  max-width: 1100px;
   padding: 0;
 }
 
@@ -49,9 +46,6 @@ li {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  flex: wrap;
-  max-width: 1100px;
-  margin: 0 auto 0;
 }
 
 input {
