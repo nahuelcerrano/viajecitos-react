@@ -63,3 +63,14 @@ button {
   margin-left: -5px;
   cursor: pointer;
 }
+
+.cardSection {
+  background-color: white;
+  color: white;
+  height: 195px;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  width: calc(100% /6);
+  
+}
