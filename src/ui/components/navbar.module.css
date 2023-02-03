@@ -12,9 +12,15 @@
   justify-content: space-between;
   line-height: 60px;
   list-style: none;
-  transition: all .4s;
+  transition: all .2s;
   font-family: 'Maven Pro', sans-serif;
   padding: 20px 0;
+  top: 0px;
+}
+
+.fixed {
+  background-color: var(--primary);
+  transition: all 0.5s ease 0s;
 }
 
 .menu {
@@ -46,4 +52,23 @@
   border-radius: 3.1rem;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+
+.contacto:hover {
+  background-color: rgba(150, 38, 36, 0.8);
+  background-color: var(--secondary);
+}
+
+.contactAfter {
+  background-color: #fff;
+  color: #000;
+}
+
+.navbarOffset {
+  padding: 10em;
+}
+
+.content {
+  background-color: #333;
+  padding: 0.25em 1em 0.25em 1em;
 }
