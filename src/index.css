@@ -77,6 +77,11 @@ html::-webkit-scrollbar-track {
   margin: 0 auto 0;
 }
 
+.flex {
+  display: flex;
+  align-items: stretch;
+}
+
 .card {
   width: 250px;
   height: 350px;

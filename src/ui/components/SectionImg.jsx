@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionImgCard } from './SectionImgCard'
-import { icoImg } from '../data/ico';
+import { icoImg } from '../../data';
 import imgSection from './footer.module.css'
 
 export const SectionImg = () => {

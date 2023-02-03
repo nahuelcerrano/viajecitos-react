@@ -1,4 +1,4 @@
-import { viajes } from '../data/viajes';
+import { viajes } from '../../data/';
 
 export const getPageByName = ( page ) => {
 
