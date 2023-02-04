@@ -5,6 +5,9 @@ import sectionStyles from './recorrido.module.css'
 
 
 export const RecorridoSection = () => {
+
+  const newCountry = country.slice(0, 4)
+
   return (
     <section className={sectionStyles.sectionContainer}>
       <div className={`${sectionStyles.container} row flex`}>
@@ -17,7 +20,7 @@ export const RecorridoSection = () => {
           </p>
         </div>
         {
-        country.map(countries => (
+        newCountry.map(countries => (
           <RecorridoCard 
             key={ countries.id }
             {...countries}

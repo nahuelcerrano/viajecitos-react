@@ -19,7 +19,8 @@
 }
 
 .fixed {
-  background-color: var(--primary);
+  background: rgb(255,255,255);
+  background: linear-gradient(61deg, rgba(255,255,255,1) 0%, rgba(220,20,107,1) 35%, rgba(220,20,60,1) 100%);
   transition: all 0.5s ease 0s;
 }
 
@@ -41,6 +42,7 @@
   font-size: 4rem;
   font-weight: bold;
   margin-left: 0.3rem;
+  text-shadow: 1px 0 3px #000;
 }
 
 .contacto {

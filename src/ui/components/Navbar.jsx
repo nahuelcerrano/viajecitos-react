@@ -31,7 +31,7 @@ export const Navbar = () => {
       // ${fixed && navStyles.fixed} ${fixed && 'animate__animated animate__slideOutUp'}
       className={`${navStyles.navbar} row`}
       ref={navbar}>
-        <Link className={navStyles.logo} to="/">
+        <Link className={`${navStyles.logo}`} to="/">
           Viajecitos
         </Link>
 
