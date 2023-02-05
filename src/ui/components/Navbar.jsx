@@ -25,7 +25,7 @@ export const Navbar = () => {
 
   return (
     <div 
-      className={`${navStyles.header}  ${fixed && navStyles.fixed} ${!fixed && 'animate__animated animate__fadeIn animate__faster'}`}
+      className={`${navStyles.header}  ${fixed && navStyles.fixed} ${fixed && 'animate__animated animate__slideInDown'} ${!fixed && 'animate__animated animate__fadeIn animate__faster'}`}
       ref={navbarOffset}>
       <nav
       // ${fixed && navStyles.fixed} ${fixed && 'animate__animated animate__slideOutUp'}
