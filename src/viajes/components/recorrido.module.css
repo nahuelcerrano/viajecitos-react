@@ -3,7 +3,7 @@
 }
 
 .container {
-  padding: 5vh 0 20vh;
+  padding: 5vh 0 10vh;
   flex-wrap: wrap;
   justify-content: space-between;
 }

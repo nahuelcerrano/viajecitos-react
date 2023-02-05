@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.sectionSlide {
+  padding: 0 0 60px 0;
+}
+
+.containerSlider {
+  width: 90%;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  transition: transform ease-out .3s;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primary);
+  text-shadow: 2px 0 3px #000;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  color: #fff;
+  text-align: left;
+  padding: 150px 100px 0;
+  text-shadow: 2px 0 3px #000;
+  font-family: 'Itim', cursive;
+}
+
+.contentGrid h1 {
+  grid-area: 1 / 1 / 2 / 2;
+  font-size: 50px;
+  color: var(--secondary);
+}
+.contentGrid h2 { grid-area: 2 / 1 / 3 / 2; }
+.contentGrid h3 { grid-area: 3 / 1 / 4 / 2; }
