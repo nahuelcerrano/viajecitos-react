@@ -41,4 +41,22 @@ export const country = [
     'city': 'Barcelona',
     'price': '250'
   },
+  {
+    'id': 'country8',
+    'country': 'Bhutan',
+    'city': 'Himalaya',
+    'price': '250'
+  },
+  {
+    'id': 'country9',
+    'country': 'Argentina',
+    'city': 'Santa Cruz',
+    'price': '250'
+  },
+  {
+    'id': 'country10',
+    'country': 'Emiratos Árabes Unidos',
+    'city': 'Dubái',
+    'price': '250'
+  },
 ]
