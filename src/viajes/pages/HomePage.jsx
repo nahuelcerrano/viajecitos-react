@@ -1,5 +1,5 @@
 import React from 'react'
-import { AdSection, DestinoSection, PageHeader, RecorridoSection } from '../components'
+import { AdSection, DestinoSection, PageHeader, RecorridoSection, OfertaSection } from '../components'
 import homeStyles from './home.module.css'
 
 export const HomePage = () => {
@@ -11,8 +11,8 @@ export const HomePage = () => {
         <RecorridoSection />
         <AdSection />
         <DestinoSection />
-        {/*<OfertaSection />
-        <NosotrosSection /> */}
+        <OfertaSection />
+        {/* <NosotrosSection /> */}
       </main>
 
 
