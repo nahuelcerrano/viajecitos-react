@@ -1,0 +1,26 @@
+import React from 'react'
+import nosotrosStyle from './nosotros.module.css'
+
+export const NosotrosCard = ({
+  id,
+  title,
+  description,
+}) => {
+  
+  const nosotrosImgUrl = `assets/backgrounds/${ id }.jpg`
+
+  return (
+    <div className={nosotrosStyle.card}>
+      <div style={{
+        backgroundImage: `url(${nosotrosImgUrl})`,
+        height: '50%',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}></div>
+      <div className={nosotrosStyle.innterText}>
+        <strong>{title}</strong>
+        <p>{description}</p>
+      </div>
+    </div>
+  )
+}

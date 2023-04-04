@@ -1,5 +1,5 @@
 import React from 'react'
-import { AdSection, DestinoSection, PageHeader, RecorridoSection, OfertaSection } from '../components'
+import { AdSection, DestinoSection, PageHeader, RecorridoSection, OfertaSection, NosotrosSection } from '../components'
 import homeStyles from './home.module.css'
 
 export const HomePage = () => {
@@ -12,7 +12,7 @@ export const HomePage = () => {
         <AdSection />
         <DestinoSection />
         <OfertaSection />
-        {/* <NosotrosSection /> */}
+        <NosotrosSection />
       </main>
 
 
