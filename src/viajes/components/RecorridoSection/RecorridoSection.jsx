@@ -1,6 +1,6 @@
 import React from 'react'
 import { RecorridoCard } from './RecorridoCard'
-import { country } from '../../data'
+import { country } from '../../../data'
 import sectionStyles from './recorrido.module.css'
 
 

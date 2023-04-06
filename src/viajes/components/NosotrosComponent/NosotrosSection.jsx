@@ -1,5 +1,5 @@
 import React from 'react'
-import { nosotros } from '../../data'
+import { nosotros } from '../../../data'
 import { NosotrosCard } from './NosotrosCard'
 import nosotrosStyle from './nosotros.module.css'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageSlider } from './ImageSlider'
-import { ads } from '../../data'
+import { ads } from '../../../data'
 import sliderStyles from './ad.module.css'
 
 export const AdSection = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { getPageByName } from '../helpers/getPageByName'
+import { getPageByName } from '../../helpers/getPageByName'
 import { HeroBanner } from './HeroBanner'
 
 export const PageHeader = ({ page }) => {

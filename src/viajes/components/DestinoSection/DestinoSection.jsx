@@ -1,5 +1,5 @@
 import React from 'react'
-import { country } from '../../data';
+import { country } from '../../../data';
 import destinoStyles from './destino.module.css'
 import { DestinoCard } from './DestinoCard';
 

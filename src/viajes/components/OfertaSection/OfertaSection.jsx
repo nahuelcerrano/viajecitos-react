@@ -1,5 +1,5 @@
 import React from 'react'
-import { adVerano } from '../../data'
+import { adVerano } from '../../../data'
 import ofertaStyle from './oferta.module.css'
 import { OfertaCard } from './OfertaCard'
 
