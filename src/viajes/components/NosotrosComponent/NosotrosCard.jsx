@@ -7,7 +7,7 @@ export const NosotrosCard = ({
   description,
 }) => {
   
-  const nosotrosImgUrl = `assets/backgrounds/${ id }.jpg`
+  const nosotrosImgUrl = `src/assets/backgrounds/${ id }.jpg`
 
   return (
     <div className={nosotrosStyle.card}>
