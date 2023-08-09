@@ -3,7 +3,7 @@ import imgSection from './footer.module.css'
 
 export const SectionImgCard = ({ id }) => {  
 
-  const icoImageUrl = `src/assets/ico/${id}.jpg`
+  const icoImageUrl = `/ico/${id}.jpg`
   
   return (
 

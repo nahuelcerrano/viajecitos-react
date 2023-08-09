@@ -26,7 +26,7 @@ export const ImageSlider = ({ ads }) => {
     setCurrentIndex(adIndex)
   }
 
-  const urlImageSlider = `src/assets/ads/${ads[currentIndex].id}.jpg`
+  const urlImageSlider = `/ads/${ads[currentIndex].id}.jpg`
   
   const slideStylesWidthBackground = {
     ...slideStyles,

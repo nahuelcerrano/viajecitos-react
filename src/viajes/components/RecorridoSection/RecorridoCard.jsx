@@ -8,7 +8,7 @@ export const RecorridoCard = ({
   price,
 }) => {
   
-  const recorridoImageUrl = `src/assets/countries/${ id }.jpg`
+  const recorridoImageUrl = `/countries/${ id }.jpg`
 
   return (
     <div className='card'>

@@ -4,7 +4,7 @@ import ofertaStyle from './oferta.module.css'
 import { OfertaCard } from './OfertaCard'
 
 const sectionContainer = {
-  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.03)),url(../assets/ads/paquete_especial.jpg)',
+  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.03)),url(/ads/paquete_especial.jpg)',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   backgroundSize: 'cover',

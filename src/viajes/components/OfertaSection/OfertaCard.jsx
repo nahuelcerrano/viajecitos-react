@@ -7,7 +7,7 @@ export const OfertaCard = ({
   description,
 }) => {
 
-  const ofertaImgUrl = `src/assets/ads/${ id }.jpg`
+  const ofertaImgUrl = `/ads/${ id }.jpg`
 
   return (
     <div className={ofertaStyle.card}>

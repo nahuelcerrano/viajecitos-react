@@ -8,7 +8,7 @@ export const DestinoCard = ({
   price,
 }) => {
 
-  const destinoImageUrl = `src/assets/countries/${ id }.jpg`
+  const destinoImageUrl = `/countries/${ id }.jpg`
 
 
   return (

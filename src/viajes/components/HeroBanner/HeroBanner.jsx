@@ -8,7 +8,7 @@ export const HeroBanner = ({
   subtitle,
 }) => {
 
-  const heroImageUrl = `src/assets/backgrounds/${ id }.jpg`
+  const heroImageUrl = `/backgrounds/${ id }.jpg`
   
   return (
     <div style={{
