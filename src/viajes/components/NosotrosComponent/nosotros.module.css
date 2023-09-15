@@ -20,6 +20,16 @@
   width: 250px;
 }
 
+.cardIco {
+  transition: all .3s ease-out;
+}
+
+.cardIco:hover {
+  transform: scale(1.1) rotate( -1.5deg);
+  transition: all .3s ease-out;
+  opacity: .9;
+}
+
 .innterText {
   background: white;
   color: gray;

@@ -30,6 +30,12 @@
   width: 250px;
 }
 
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+  transition: transform .5s;
+}
+
 .oferta {
   border-top-left-radius: 5px;
   position: absolute;

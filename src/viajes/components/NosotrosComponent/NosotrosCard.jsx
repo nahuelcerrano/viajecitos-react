@@ -11,7 +11,7 @@ export const NosotrosCard = ({
 
   return (
     <div className={nosotrosStyle.card}>
-      <div style={{
+      <div className={nosotrosStyle.cardIco} style={{
         backgroundImage: `url(${nosotrosImgUrl})`,
         height: '50%',
         backgroundPosition: 'center',

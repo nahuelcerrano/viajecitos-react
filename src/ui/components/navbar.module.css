@@ -54,12 +54,12 @@
   border: none;
   border-radius: 3.1rem;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .contacto:hover {
-  background-color: rgba(150, 38, 36, 0.8);
-  background-color: var(--secondary);
+  background-color: #d4a6ce;
+  color: #fff;
 }
 
 .contactAfter {

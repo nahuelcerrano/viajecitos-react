@@ -4,7 +4,7 @@ import sectionStyles from './recorrido.module.css'
 export const RecorridoCard = ({
   id,
   country,
-  city,
+  name,
   price,
 }) => {
   
@@ -19,7 +19,7 @@ export const RecorridoCard = ({
         height: '100%',
       }}></div>
       <div className={sectionStyles.text}>
-        <p>{`${country} | ${city}`}</p>
+        <p>{`${country} | ${name}`}</p>
         <p>${ price }</p>
       </div>
       <div></div>
