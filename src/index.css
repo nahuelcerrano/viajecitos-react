@@ -95,3 +95,17 @@ html::-webkit-scrollbar-track {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+.main_div {
+  text-align: center;
+}
+
+.main_div h1 {
+  padding: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.main_div p {
+  padding: 5rem;
+  font-size: 1.1rem;
+}

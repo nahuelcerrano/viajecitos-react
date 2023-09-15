@@ -3,6 +3,7 @@ import React from 'react'
 import { ViajesSection, HotelSection, AdSection } from '../components'
 import { PageHeader } from '../components/HeroBanner/PageHeader'
 import homeStyles from './home.module.css'
+import { ViajesAdSection } from '../components/ViajesSection/ViajesAdSection'
 
 export const TripPage = () => {
   return (
@@ -11,7 +12,7 @@ export const TripPage = () => {
 
       <main className={homeStyles.main}>
         <ViajesSection />
-        <AdSection />
+        <ViajesAdSection />
         <HotelSection />
       </main>
 

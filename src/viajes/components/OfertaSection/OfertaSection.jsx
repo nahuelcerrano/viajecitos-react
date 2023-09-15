@@ -1,7 +1,7 @@
 import React from 'react'
-import { adVerano } from '../../../data'
-import ofertaStyle from './oferta.module.css'
 import { OfertaCard } from './OfertaCard'
+import { ad_verano } from '../../../data'
+import ofertaStyle from './oferta.module.css'
 
 const sectionContainer = {
   backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.03)),url(/ads/paquete_especial.jpg)',
@@ -12,9 +12,7 @@ const sectionContainer = {
 }
 
 export const OfertaSection = () => {
-  
-  console.log(adVerano)
-  
+    
   return (
     <section style={sectionContainer}>
       <div className={`${ofertaStyle.container} row flex`}>
@@ -22,7 +20,7 @@ export const OfertaSection = () => {
           <h2>Paquetes Especiales - Temporada Verano</h2>
         </div>
         {
-          adVerano.map( card => (
+          ad_verano.map( card => (
             <OfertaCard
               key={ card.id }
               {...card}

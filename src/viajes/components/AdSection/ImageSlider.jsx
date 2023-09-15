@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { GoDotFill } from 'react-icons/go'
 import sliderStyles from './ad.module.css'
 
 const slideStyles = {
@@ -63,7 +64,7 @@ export const ImageSlider = ({ ads }) => {
               className={sliderStyles.dot}
               key={adIndex}
               onClick={() => gotoSlide(adIndex)}>
-              ●
+              <GoDotFill />
             </div>
           ))
         }

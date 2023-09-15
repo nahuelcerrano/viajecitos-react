@@ -18,7 +18,27 @@ export const ads = [
   },
 ]
 
-export const adVerano = [
+export const ad_viajes = [
+  {
+    'id': 'viajes_1',
+    'title': '50% OFF',
+    'subtitle': 'Desde el 15 al 31 de octubre tendrá un 50% de descuento en su primer viaje con nosotros.',
+    'description': 'Con su primera compra en el sitio tendra 15% en los hoteles y guias turisticas en los destinos que eliga.',
+  },
+  {
+    'id': 'viajes_2',
+    'title': 'Open your World',
+    'subtitle': 'LLorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, reprehenderit. A, sit libero?',
+    'description': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, eaque. Quidem itaque cum commodi.'  },
+  {
+    'id': 'viajes_3',
+    'title': 'Discover your way',
+    'subtitle': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta accusantium dolores vel?',
+    'description': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur earum quibusdam perferendis magnam?',
+  },
+]
+
+export const ad_verano = [
   {
     'id': 'verano_1',
     'title': 'Playa Palolem - Goa (INDIA)',
