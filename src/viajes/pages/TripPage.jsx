@@ -1,7 +1,7 @@
 import React from 'react'
-import { AdSection, RecorridoSection } from '../components'
+
+import { ViajesSection, HotelSection, AdSection } from '../components'
 import { PageHeader } from '../components/HeroBanner/PageHeader'
-import { ViajesSection } from '../components/ViajesSection/ViajesSection'
 import homeStyles from './home.module.css'
 
 export const TripPage = () => {
@@ -12,7 +12,7 @@ export const TripPage = () => {
       <main className={homeStyles.main}>
         <ViajesSection />
         <AdSection />
-        <RecorridoSection />
+        <HotelSection />
       </main>
 
     </>

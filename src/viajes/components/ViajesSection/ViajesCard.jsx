@@ -1,9 +1,39 @@
-import React from 'react'
+import React from "react";
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
-export const ViajesCard = () => {
+import viajesCard from './viajes.module.css'
+
+export const ViajesCard = ({
+  id,
+  url,
+  name,
+  description,
+  price,
+}) => {
+
+  const destinoImageUrl = `/${ url }/${ id }.jpg`
+  const capsName = name.toUpperCase()
+
   return (
-    <div>
-      TEST
+    <div className={viajesCard.cardGrid}>
+      <div className={viajesCard.cardImage}>
+        <img src={ destinoImageUrl } alt={ name } />
+      </div>
+      <div className={viajesCard.cardText}>
+        <h3>{ capsName }</h3>
+        <p className={viajesCard.cardDescription}> { description }</p>
+        <h3>$ { price }</h3>
+        <div className={viajesCard.cardStars}>
+          <span> <AiFillStar /></span>
+          <span> <AiFillStar /></span>
+          <span> <AiFillStar /></span>
+          <span> <AiFillStar /></span>
+          <span> <AiOutlineStar /></span>
+        </div>
+      </div>
+      <div className={viajesCard.cardButton}>
+        <button className={viajesCard.cardButtonHover}>Comprar</button>
+      </div>
     </div>
-  )
-}
+  );
+};
