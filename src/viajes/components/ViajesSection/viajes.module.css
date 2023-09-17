@@ -82,7 +82,8 @@
 }
 
 .cardStars {
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .cardButton {
@@ -97,6 +98,7 @@
   width: 100%;
   height: 100%;
   border-radius: 0;
+  color: #fff;
   background-image: linear-gradient(
     to right,
     #25aae1,
