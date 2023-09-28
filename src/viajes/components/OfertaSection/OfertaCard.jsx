@@ -5,6 +5,7 @@ export const OfertaCard = ({
   id,
   title,
   description,
+  off,
 }) => {
 
   const ofertaImgUrl = `/ads/${ id }.jpg`
@@ -17,7 +18,7 @@ export const OfertaCard = ({
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}>
-        <span className={ofertaStyle.oferta}>25% OFF</span>
+        <span className={ofertaStyle.oferta}>{ off }% OFF</span>
       </div>
       <div className={ofertaStyle.innterText}>
         <strong>{title}</strong>
