@@ -17,7 +17,7 @@ export default function BankCard({
   return (
     <div className="flex justify-center">
       <Card 
-        className="max-w-[200px] max-h-[500px]"
+        className="max-w-[220px] max-h-[500px]"
         radius="sm"
       >
         <CardHeader className="flex gap-3">

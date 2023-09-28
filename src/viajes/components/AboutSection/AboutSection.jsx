@@ -2,7 +2,7 @@ import React from 'react'
 
 export const AboutSection = () => {
   return (
-    <section class="main_div row">
+    <section className="main_div row">
       <h1>Sobre Viajecitos</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sit, quae a facilis eveniet ea
