@@ -4,6 +4,7 @@ import { AboutSection } from '../components/AboutSection/AboutSection'
 import homeStyles from './home.module.css'
 import { ServicesDiscount } from '../components/ServicesComponent/ServicesDiscount'
 import { ServicesBanks } from '../components/ServicesComponent/ServicesBanks'
+import { ServicesTours } from '../components/ServicesComponent/ServicesTours'
 
 export const ServicePage = () => {
   return (
@@ -12,6 +13,7 @@ export const ServicePage = () => {
 
       <main className={ homeStyles.home }>
         <ServicesDiscount />
+        <ServicesTours />
         <ServicesBanks />
         <AboutSection />
       </main>
