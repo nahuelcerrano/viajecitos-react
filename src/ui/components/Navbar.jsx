@@ -54,7 +54,7 @@ export const Navbar = () => {
           {/* <button className={`${navStyles.contacto} ${fixed && navStyles.contactAfter}`}>
             Contacto
           </button> */}
-          <Button radius="lg" className="bg-rose-700 text-white">
+          <Button radius="lg" className={ fixed ? 'bg-white text-black' : 'bg-rose-700 text-white' }>
             Contacto
           </Button> 
         </Link>
