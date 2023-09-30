@@ -2,7 +2,18 @@ import React from 'react'
 import { Button, Card, CardBody, Image } from '@nextui-org/react'
 import image from '/ads/verano_2.jpg'
 
-export const ToursCards = () => {
+export const ToursCards = ({
+  id,
+  country,
+  name,
+  alt,
+  price,
+  discount,
+  bank,
+}) => {
+
+  const tourUrl = `/countries/${ id }.jpg`
+
   return (
     <Card
       isBlurred
@@ -11,20 +22,19 @@ export const ToursCards = () => {
       radius='sm'
     >
       <CardBody>
-        <div className="grid grid-cols-3 grid-rows-3 gap-5 items-center justify-center">
+        <div className="grid grid-cols-3 grid-rows-3 gap-0 items-center justify-center">
           <div className="relative row-span-3 pr-5">
             <Image
-              alt="Album cover"
-              className="object-cover cursor-pointer"
+              alt={ alt }
+              className="object-cover"
               shadow="md"
-              src={ image }
+              src={ tourUrl }
               width="100%"
-              isZoomed
             />
           </div>
 
           <div className="col-span-2">
-            <p className="text-lg font-extrabold">Tour de Barcelona - Tour Privado</p>
+            <p className="text-lg font-extrabold">Tour de { name } - Tour Privado</p>
             <p className='text-small'>Duración: 4 horas / Incluye guías</p>
           </div>
           
@@ -33,7 +43,15 @@ export const ToursCards = () => {
           </div>
 
           <div className='col-span-2'>
-            <p className='py-2'>Desde 200$ - Con tarjetas Visa y Mastercard </p>
+            <p className='py-2'>Desde { price }$ - { discount }% OFF con { bank } </p>
+            <Button 
+              size='sm' 
+              color='success'
+              radius='sm'
+              className='mr-5'
+            >
+              Comprar
+            </Button>
           </div>
 
         </div>

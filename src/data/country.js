@@ -6,7 +6,9 @@ export const country = [
     'name': 'Dublín',
     'alt': 'dublín',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '200'
+    'price': '200',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country2',
@@ -15,7 +17,9 @@ export const country = [
     'alt': 'elcairo',
     'name': 'El Cairo',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '300'
+    'price': '300',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country3',
@@ -24,7 +28,9 @@ export const country = [
     'alt': 'moscú',
     'name': 'Moscú',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '280'
+    'price': '280',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country4',
@@ -33,7 +39,9 @@ export const country = [
     'alt': 'isladepascua',
     'name': 'Isla de Pascua',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '450'
+    'price': '450',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country5',
@@ -42,7 +50,9 @@ export const country = [
     'alt': 'nuevayork',
     'name': 'Nueva York',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '300'
+    'price': '300',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country6',
@@ -51,7 +61,9 @@ export const country = [
     'alt': 'tokyo',
     'name': 'Tokyo',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '300'
+    'price': '300',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country7',
@@ -60,7 +72,9 @@ export const country = [
     'alt': 'barcelona',
     'name': 'Barcelona',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '250'
+    'price': '250',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country8',
@@ -69,7 +83,9 @@ export const country = [
     'alt': 'himalaya',
     'name': 'Himalaya',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '250'
+    'price': '250',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country9',
@@ -78,7 +94,9 @@ export const country = [
     'alt': 'santacruz',
     'name': 'Santa Cruz',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '250'
+    'price': '250',
+    'discount':10,
+    'bank':'Visa',
   },
   {
     'id': 'country10',
@@ -87,6 +105,8 @@ export const country = [
     'alt': 'dubái',
     'name': 'Dubái',
     'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    'price': '250'
+    'price': '250',
+    'discount':10,
+    'bank':'Visa',
   },
 ]

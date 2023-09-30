@@ -13,9 +13,8 @@ export const ServicePage = () => {
 
       <main className={ homeStyles.home }>
         <ServicesDiscount />
-        <ServicesTours />
         <ServicesBanks />
-        <AboutSection />
+        <ServicesTours />
       </main>
     </>
   )

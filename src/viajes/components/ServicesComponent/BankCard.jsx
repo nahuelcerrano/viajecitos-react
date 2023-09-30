@@ -7,6 +7,7 @@ import {
   CardFooter, 
   Divider, 
   Link,
+  Button,
 } from "@nextui-org/react";
 
 export default function BankCard({
@@ -33,11 +34,17 @@ export default function BankCard({
         <CardFooter className="flex justify-center">
           <Link
             isExternal
-            showAnchorIcon
             size="lg"
             href={ link }
           >
-            Ir
+            <Button 
+              size='sm' 
+              color='success'
+              radius='sm'
+              className='mr-5'
+            >
+              Comprar
+            </Button>
           </Link>
         </CardFooter>
       </Card>
