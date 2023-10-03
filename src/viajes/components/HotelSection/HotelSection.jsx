@@ -8,7 +8,7 @@ export const HotelSection = () => {
   return (
     <section className={hotel.sectionHotel}>
       <div className={hotel.titleSection}>
-        <h2>
+        <h2 className='text-center text-2xl font-bold py-5'>
           Los mejores hoteles
         </h2>
         <p>

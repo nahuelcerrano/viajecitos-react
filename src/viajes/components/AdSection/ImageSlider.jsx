@@ -8,6 +8,7 @@ const slideStyles = {
   borderRadius: "10px",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0) 13%, rgba(0,0,0,1) 100%)'
 };
 
 
@@ -31,7 +32,7 @@ export const ImageSlider = ({ ads }) => {
   
   const slideStylesWidthBackground = {
     ...slideStyles,
-    backgroundImage: `url(${urlImageSlider})`,
+    backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 13%, rgba(0,0,0,1) 100%), url(${urlImageSlider}`,
   };
   
   useEffect(() => {
@@ -53,8 +54,8 @@ export const ImageSlider = ({ ads }) => {
       <div style={slideStylesWidthBackground}>
         <div className={`${sliderStyles.contentGrid}`}>
           <h1>{ads[currentIndex].title}</h1>
-          <h2>{ads[currentIndex].subtitle}</h2>
-          <h3>{ads[currentIndex].description}</h3>
+          <h2 className='text-xl'>{ads[currentIndex].subtitle}</h2>
+          <h3 className='text-xl'>{ads[currentIndex].description}</h3>
         </div>
       </div>
       <div className={sliderStyles.dotsContainer}>

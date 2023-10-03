@@ -7,7 +7,7 @@ export const Newsletter = () => {
   return (
     <section className={newsletter.newsletter}>
       <div className={`${newsletter.newsflex} row items-center`}>
-          <h2 className='text-white'>Newsletter Section</h2>
+          <h2 className='text-white font-bold'>Newsletter Section</h2>
           <div className='flex justify-center'>
             <Input
               color='default'

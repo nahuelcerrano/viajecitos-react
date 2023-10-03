@@ -23,7 +23,7 @@ export const HeroBanner = ({
         {/* <img src={ heroImageUrl } alt={ page } /> */}
       <div className={styles.text}>
         <h1 className={styles.title}>{ title }</h1>
-        <h2>{ subtitle }</h2>
+        <h2 className={styles.subtitle}>{ subtitle }</h2>
       </div>
     </div>
   )

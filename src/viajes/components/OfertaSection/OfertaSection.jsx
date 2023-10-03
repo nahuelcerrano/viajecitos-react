@@ -17,7 +17,7 @@ export const OfertaSection = () => {
     <section style={sectionContainer}>
       <div className={`${ofertaStyle.container} row flex`}>
         <div className={ofertaStyle.title}>
-          <h2>Paquetes Especiales - Temporada Verano</h2>
+          <h2 className='text-center text-2xl font-bold py-5'>Paquetes Especiales - Temporada Verano</h2>
         </div>
         {
           ad_verano.map( card => (

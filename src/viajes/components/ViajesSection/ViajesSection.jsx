@@ -10,7 +10,7 @@ export const ViajesSection = () => {
   return (
     <section className={viajes.sectionViajes}>
       <div className={viajes.titleSection}>
-        <h2>
+        <h2 className='text-center text-2xl font-bold py-5'>
           Nuestros viajes para usted
         </h2>
         <p>
