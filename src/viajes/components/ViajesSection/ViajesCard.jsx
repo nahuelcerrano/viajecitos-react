@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
 import viajesCard from './viajes.module.css'
+import { useCart } from "../../../hooks/useCart";
 
 export const ViajesCard = ({
   id,
@@ -10,6 +11,12 @@ export const ViajesCard = ({
   description,
   price,
 }) => {
+
+  const { addToCart, cart } = useCart()
+
+  const checkProductInCart = product => {
+    return cart.some( item.id === product.id )
+  }
 
   const destinoImageUrl = `/${ url }/${ id }.jpg`
   const capsName = name.toUpperCase()
@@ -32,7 +39,12 @@ export const ViajesCard = ({
         </div>
       </div>
       <div className={viajesCard.cardButton}>
-        <button className={viajesCard.cardButtonHover}>Comprar</button>
+        <button 
+          onClick={() => addToCart()}
+          className={viajesCard.cardButtonHover}
+        >
+          Comprar
+        </button>
       </div>
     </div>
   );
