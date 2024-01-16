@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'form': "url('../public/backgrounds/form_bg.jpg')",
+        'form': "url('../backgrounds/form_bg.jpg')",
       },
     },
   },
