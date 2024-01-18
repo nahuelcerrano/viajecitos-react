@@ -9,7 +9,7 @@ export const VentasPage = () => {
       <PageHeader page='viajes' />
 
       <main className={homeStyles.main}>
-      <ViajesSection numCardsToShow={34}/>
+        <ViajesSection numCardsToShow={34}/>
       </main>
     </>
   )

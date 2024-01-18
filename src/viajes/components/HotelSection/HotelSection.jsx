@@ -3,7 +3,9 @@ import { hoteles } from '../../../data'
 import { ViajesCard } from '../ViajesSection/ViajesCard'
 import hotel from './hotel.module.css'
 
-export const HotelSection = () => {
+export const HotelSection = ({ numCardstoShow }) => {
+
+  const limitedHotels = hoteles.slice(0, numCardstoShow)
 
   return (
     <section className={hotel.sectionHotel}>
@@ -17,7 +19,7 @@ export const HotelSection = () => {
       </div>
       <div className={hotel.cardsContainer}>
         {
-          hoteles.map(countries => (
+          limitedHotels.map(countries => (
             <ViajesCard
               key = { countries.id }
               { ... countries }

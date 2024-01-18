@@ -7,6 +7,7 @@ import { HomePage } from '../pages/HomePage'
 import { ServicePage } from '../pages/ServicePage'
 import { TripPage } from '../pages/TripPage'
 import { VentasPage } from '../pages/VentasPage'
+import { HotelesPage } from '../pages/HotelesPage'
 
 export const ViajesRoutes = () => {
   return (
@@ -20,6 +21,7 @@ export const ViajesRoutes = () => {
           <Route path='servicios' element={<ServicePage />} />
           <Route path='viajes' element={<TripPage />} />
           <Route path='viajes/destinos' element={<VentasPage />} />
+          <Route path='viajes/hoteles' element={<HotelesPage />} />
 
           <Route path='/*' element={<Navigate to='/home' />} />
         </Routes>
