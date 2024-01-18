@@ -1,11 +1,11 @@
 import React from 'react'
-import { country } from '../../../data';
+import { destinos } from '../../../data';
 import destinoStyles from './destino.module.css'
 import { DestinoCard } from './DestinoCard';
 
 export const DestinoSection = () => {
 
-  const newCountry = country.slice(4, 11)
+  const newCountry = destinos.slice(4, 11)
 
   return (
     <section className={destinoStyles.section}>

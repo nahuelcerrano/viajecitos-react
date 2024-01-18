@@ -1,6 +1,6 @@
 export * from './ico'
 export * from './viajes'
-export * from './country'
+export * from './destinos'
 export * from './ads'
 export * from './nosotros'
 export * from './hoteles'

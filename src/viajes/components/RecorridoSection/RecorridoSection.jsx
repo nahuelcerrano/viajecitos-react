@@ -1,12 +1,12 @@
 import React from 'react'
 import { RecorridoCard } from './RecorridoCard'
-import { country } from '../../../data'
+import { destinos } from '../../../data'
 import sectionStyles from './recorrido.module.css'
 
 
 export const RecorridoSection = () => {
 
-  const newCountry = country.slice(0, 4)
+  const newCountry = destinos.slice(0, 4)
 
   return (
     <section className={sectionStyles.sectionContainer}>

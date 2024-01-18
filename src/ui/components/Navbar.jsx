@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import navStyles from "./navbar.module.css";
 import { Button } from "@nextui-org/react";
 import { Cart } from "../../viajes/components/CartComponent/Cart";
-import { country } from "../../data/country";
+import { destinos } from "../../data/destinos";
 
 
 export const Navbar = () => {
@@ -58,7 +58,7 @@ export const Navbar = () => {
               Contacto
             </Button> 
           </Link>
-          <Cart country={country}/>
+          <Cart destinos={destinos}/>
         </div>
       </nav>
     </div>

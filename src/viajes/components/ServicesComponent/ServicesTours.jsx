@@ -1,6 +1,6 @@
 import React from 'react'
 import { ToursCards } from './ToursCards'
-import { country } from '../../../data'
+import { destinos } from '../../../data'
 
 export const ServicesTours = () => {
   return (
@@ -9,7 +9,7 @@ export const ServicesTours = () => {
         <h1 className='font-extrabold text-2xl py-8 text-center'>Tours Guiados en varios destinos</h1>
       </div>
       {
-        country.map( tour => (
+        destinos.map( tour => (
           <ToursCards 
             key={ tour.id }
             { ...tour }

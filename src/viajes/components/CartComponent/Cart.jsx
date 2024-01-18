@@ -2,7 +2,7 @@ import React, { useId } from 'react'
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, ScrollShadow, Image} from "@nextui-org/react";
 import { BsFillCartFill, BsFillCartDashFill } from 'react-icons/bs'
 import { useCart } from '../../../hooks/useCart';
-import { country } from '../../../data';
+import { destinos } from '../../../data';
 
 
 

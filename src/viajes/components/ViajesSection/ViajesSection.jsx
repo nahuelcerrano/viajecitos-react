@@ -1,11 +1,11 @@
 import React from 'react'
-import { country } from '../../../data'
+import { destinos } from '../../../data'
 import { ViajesCard } from './ViajesCard'
 import viajes from './viajes.module.css'
 
 export const ViajesSection = ({ numCardsToShow }) => {
 
-  const limitedCountries = country.slice(0, numCardsToShow);
+  const limitedCountries = destinos.slice(0, numCardsToShow);
 
   return (
     <section className={viajes.sectionViajes}>
