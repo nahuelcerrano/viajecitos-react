@@ -1,13 +1,15 @@
 import React from 'react'
 
 import homeStyles from './home.module.css'
-import { ViajesSection } from '../components'
+import { PageHeader, ViajesSection } from '../components'
 
 export const VentasPage = () => {
   return (
     <>
+      <PageHeader page='viajes' />
+
       <main className={homeStyles.main}>
-        <ViajesSection/>
+      <ViajesSection numCardsToShow={34}/>
       </main>
     </>
   )

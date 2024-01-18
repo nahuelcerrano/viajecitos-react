@@ -11,7 +11,7 @@ export const TripPage = () => {
       <PageHeader page='viajes' />
 
       <main className={homeStyles.main}>
-        <ViajesSection />
+        <ViajesSection numCardsToShow={8}/>
         <ViajesAdSection />
         <HotelSection />
       </main>

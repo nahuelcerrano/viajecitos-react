@@ -9,18 +9,18 @@ export const viajes  = [
     'id': 'bg_viajes',
     'page': 'viajes',
     'title': 'Empieza armar tu viaje',
-    'subtitle': 'Empieza armar tu viaje',
+    'subtitle': 'A solo un click de distancia',
   },
   {
     'id': 'bg_servicios',
     'page': 'servicios',
     'title': 'Conece los servicios que ofrecemos',
-    'subtitle': 'Conece los servicios que ofrecemos',
+    'subtitle': 'La comodidad de nuestros viajes es lo que nos importa',
   },
   {
     'id': 'bg_about',
     'page': 'about',
     'title': 'Conoce mas sobre Viajecitos',
-    'subtitle': 'Lorem ipsum dolor',
+    'subtitle': 'Sepa quienes somos',
   },
 ]

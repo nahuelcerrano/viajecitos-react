@@ -3,9 +3,9 @@ import { country } from '../../../data'
 import { ViajesCard } from './ViajesCard'
 import viajes from './viajes.module.css'
 
-export const ViajesSection = () => {
+export const ViajesSection = ({ numCardsToShow }) => {
 
-  const newCountry = country.slice(0, 8)
+  const limitedCountries = country.slice(0, numCardsToShow);
 
   return (
     <section className={viajes.sectionViajes}>
@@ -19,7 +19,7 @@ export const ViajesSection = () => {
       </div>
       <div className={viajes.cardsContainer}>
         {
-          newCountry.map(countries => (
+          limitedCountries.map(countries => (
             <ViajesCard 
               key = { countries.id }
               { ... countries }

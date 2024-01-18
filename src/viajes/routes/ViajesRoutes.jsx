@@ -6,7 +6,7 @@ import { AboutPage } from '../pages/AboutPage'
 import { HomePage } from '../pages/HomePage'
 import { ServicePage } from '../pages/ServicePage'
 import { TripPage } from '../pages/TripPage'
-import { ViajesSection } from '../components'
+import { VentasPage } from '../pages/VentasPage'
 
 export const ViajesRoutes = () => {
   return (
@@ -19,8 +19,7 @@ export const ViajesRoutes = () => {
           <Route path='about' element={<AboutPage />} />
           <Route path='servicios' element={<ServicePage />} />
           <Route path='viajes' element={<TripPage />} />
-          <Route path='viajes/destinos' element={<ViajesSection />} />
-          
+          <Route path='viajes/destinos' element={<VentasPage />} />
 
           <Route path='/*' element={<Navigate to='/home' />} />
         </Routes>
