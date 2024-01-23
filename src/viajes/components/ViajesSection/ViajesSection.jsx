@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { destinos } from '../../../data'
 import { ViajesCard } from './ViajesCard'
 import viajes from './viajes.module.css'
+import { DestinoFilters } from '../FiltersComponents/DestinoFilters'
 
 export const ViajesSection = ({ numCardsToShow }) => {
 
-  const limitedCountries = destinos.slice(0, numCardsToShow);
+  const [filters, setFilters] = useState({
+    continent: 'all',
+    minPrice: 0
+  })
+
+  const filterDestination = (destinos) => {
+    return destinos.filter(destino => {
+      
+      return (
+        destino.price >= filters.minPrice &&
+        (
+          filters.continent === 'all' ||
+          destino.continent === filters.continent
+        )
+      )
+    })
+  }
+
+  const filteredDestinations = filterDestination(destinos)
+
+  const defaultDisplayedDestinations = filteredDestinations.slice(0, numCardsToShow)
 
   return (
     <section className={viajes.sectionViajes}>
@@ -17,12 +38,13 @@ export const ViajesSection = ({ numCardsToShow }) => {
           Destinos especiales y exoticos, con nuestro catalago de mas de 50 destinos
         </p>
       </div>
+      <DestinoFilters changeFilters={setFilters}/>
       <div className={viajes.cardsContainer}>
         {
-          limitedCountries.map(countries => (
+          defaultDisplayedDestinations.map(destino => (
             <ViajesCard 
-              key = { countries.id }
-              { ... countries }
+              key = { destino.id }
+              { ... destino }
             />
           ))
         }
