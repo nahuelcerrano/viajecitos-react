@@ -1,29 +1,28 @@
-import React, { useId, useState } from 'react'
+import React, { useId } from 'react'
 
 import filterStyles from './filter.module.css'
+import { useFilters } from '../../hooks/useFilters'
 
-export const DestinoFilters = ({ changeFilters }) => {
+export const DestinoFilters = () => {
 
-  const [minPrice, setMinPrice] = useState(0)
+  const { filters, setFilters } = useFilters()
+  
   const minPriceFilterId = useId()
   const continentFilterId = useId()
 
   const handleChangeMinPrice = () => {
-    setMinPrice(event.target.value)
-    changeFilters(prevState => ({
+    setFilters(prevState => ({
       ...prevState,
       minPrice: event.target.value
     }))
   }
 
   const handleChangeContinent = () => {
-    changeFilters(prevState => ({
+    setFilters(prevState => ({
       ...prevState,
       continent: event.target.value
     }))
   }
-
-  console.log(minPrice)
 
   return (
     <>
@@ -37,8 +36,9 @@ export const DestinoFilters = ({ changeFilters }) => {
             max='1000'
             step='50'
             onChange={handleChangeMinPrice}
+            value={filters.minPrice}
           />
-          <span>${minPrice}</span>
+          <span>${filters.minPrice}</span>
         </div>
 
         <div>
