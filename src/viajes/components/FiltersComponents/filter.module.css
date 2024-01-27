@@ -1,10 +1,10 @@
 .filters {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 14px;
   font-weight: 700;
-  padding: 0 0 1rem;
+  padding: 2rem 0 1rem;
 }
 
 .filters > div {

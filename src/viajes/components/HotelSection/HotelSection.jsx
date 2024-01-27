@@ -1,11 +1,16 @@
 import React from 'react'
+import { useFilters } from '../../hooks/useFilters'
 import { hoteles } from '../../../data'
 import { ViajesCard } from '../ViajesSection/ViajesCard'
 import hotel from './hotel.module.css'
 
 export const HotelSection = ({ numCardstoShow }) => {
 
-  const limitedHotels = hoteles.slice(0, numCardstoShow)
+  const { filterDestination } = useFilters()
+
+  const filteredDestinations = filterDestination(hoteles)
+
+  const defaultDisplayedDestinations = filteredDestinations.slice(0, numCardstoShow)
 
   return (
     <section className={hotel.sectionHotel}>
@@ -19,7 +24,7 @@ export const HotelSection = ({ numCardstoShow }) => {
       </div>
       <div className={hotel.cardsContainer}>
         {
-          limitedHotels.map(countries => (
+          defaultDisplayedDestinations.map(countries => (
             <ViajesCard
               key = { countries.id }
               { ... countries }

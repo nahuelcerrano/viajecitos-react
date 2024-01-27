@@ -2,6 +2,7 @@ import React, { useId } from 'react'
 
 import filterStyles from './filter.module.css'
 import { useFilters } from '../../hooks/useFilters'
+import { Select, SelectItem } from '@nextui-org/react'
 
 export const DestinoFilters = () => {
 
@@ -23,6 +24,7 @@ export const DestinoFilters = () => {
       continent: event.target.value
     }))
   }
+  console.log(filters)
 
   return (
     <>
@@ -33,10 +35,11 @@ export const DestinoFilters = () => {
             type="range"
             id={minPriceFilterId}
             min='0'
-            max='1000'
+            max='900'
             step='50'
             onChange={handleChangeMinPrice}
             value={filters.minPrice}
+            className={filterStyles.slider}
           />
           <span>${filters.minPrice}</span>
         </div>
@@ -53,7 +56,7 @@ export const DestinoFilters = () => {
               <option value="america del norte">América del Norte</option>
             </select>
           </label>
-        </div>
+        </div> 
 
       </section>
     </>

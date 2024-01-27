@@ -10,7 +10,7 @@ export const DestinosPage = () => {
       <PageHeader page='viajes' />
 
       <main className={homeStyles.main}>
-        {/* <DestinoFilters /> */}
+        <DestinoFilters />
         <ViajesSection numCardsToShow={34}/>
       </main>
     </>
