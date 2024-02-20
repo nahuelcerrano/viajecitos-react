@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
+
 import { Link } from "react-router-dom";
-import navStyles from "./navbar.module.css";
 import { Button } from "@nextui-org/react";
-import { Cart } from "../../viajes/components/CartComponent/Cart";
-import { destinos } from "../../data/destinos";
+
+import { BsFillCartFill, BsFillCartDashFill } from 'react-icons/bs'
+
+import navStyles from "./navbar.module.css";
 
 
 export const Navbar = () => {
@@ -53,12 +55,16 @@ export const Navbar = () => {
           </li>
         </ul>
         <div className={ navStyles.buttons }>
-          <Link to="/contact">
+          <Link to="/contacto">
             <Button radius="lg" className={ fixed ? 'bg-white text-black' : 'bg-rose-700 text-white' }>
               Contacto
             </Button> 
           </Link>
-          <Cart destinos={destinos}/>
+          <Link to='/compras'>
+            <Button className='bg-transparent text-slate-50 text-2xl align-middle' >
+              <BsFillCartFill />
+            </Button>
+          </Link>
         </div>
       </nav>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavbarContact } from '../components/Navbar/NavbarContact'
-import { ContactForm } from '../components/ContactForm.jsx/ContactForm'
+import { ContactForm } from '../components/ContactForm/ContactForm'
 import { FooterContact } from '../components/FooterContact/FooterContact'
 
 

@@ -1,8 +1,10 @@
 import React from "react";
+
+
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
 import viajesCard from './viajes.module.css'
-import { useCart } from "../../../hooks/useCart";
+import { useCart } from "../../../context/Cart";
 
 export const ViajesCard = ({
   id,
@@ -12,10 +14,13 @@ export const ViajesCard = ({
   price,
 }) => {
 
-  const { addToCart, cart } = useCart()
+  const { dispatch } = useCart()
 
-  const checkProductInCart = product => {
-    return cart.some( item.id === product.id )
+  const addToCart = () => {
+    dispatch({
+      type: 'ADD_TO_CART',
+      payload: { id, name, price }
+    })
   }
 
   const destinoImageUrl = `/${ url }/${ id }.jpg`
@@ -40,7 +45,7 @@ export const ViajesCard = ({
       </div>
       <div className={viajesCard.cardButton}>
         <button 
-          onClick={() => addToCart()}
+          onClick={addToCart}
           className={viajesCard.cardButtonHover}
         >
           Comprar
