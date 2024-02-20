@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { Button } from "@nextui-org/react";
-
-import { BsFillCartFill, BsFillCartDashFill } from 'react-icons/bs'
+import { BsFillCartFill } from "react-icons/bs";
 
 import navStyles from "./navbar.module.css";
 
@@ -61,9 +60,7 @@ export const Navbar = () => {
             </Button> 
           </Link>
           <Link to='/compras'>
-            <Button className='bg-transparent text-slate-50 text-2xl align-middle' >
-              <BsFillCartFill />
-            </Button>
+            <BsFillCartFill className='ml-4' size={28}/>
           </Link>
         </div>
       </nav>

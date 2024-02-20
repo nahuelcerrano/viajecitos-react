@@ -1,28 +1,37 @@
-import React, { createContext, useContext, useState } from 'react'
-import { useReducer } from 'react';
+import React, { createContext, useEffect, useState } from 'react'
+import { destinos } from '../data'
 
-const CartContext = createContext()
+export const CartContext = createContext(null)
 
-const cartReducer = (state, action) => {
-  switch (action.type) {
-    case 'ADD_TO_CART':
-      return [...state, action.payload]
-  
-    default:
-      break;
+const getDefaultCart = () => {
+  let cart = {}
+  for (let i = 1; i < destinos.length + 1; i++) {
+    const countryId = `country${i}`
+    cart[countryId] = 0
   }
+  return cart
 }
 
 export const CartProvider = ({ children }) => {
-  const [cart, dispatch] = useReducer(cartReducer, [])
+  const [cartItems, setCartItems] = useState(getDefaultCart())
+
+  useEffect(() => {
+    localStorage.setItem('destinos', JSON.stringify(cartItems));
+  }, [cartItems]);
+
+  const addToCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
+  }
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
+  }
+
+  const contextValue = {cartItems, addToCart, removeFromCart}
 
   return (
-    <CartContext.Provider value={{ cart, dispatch }}>
+    <CartContext.Provider value={contextValue}>
       { children }
     </CartContext.Provider>
   )
-}
-
-export const useCart = () => {
-  return useContext(CartContext)
 }

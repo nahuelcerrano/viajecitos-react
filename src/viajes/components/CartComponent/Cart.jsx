@@ -1,20 +1,29 @@
-import React from 'react'
-import { useCart } from '../../../context/Cart'
+import React, { useContext } from 'react'
+import { CartContext } from '../../../context/Cart'
+import { destinos } from '../../../data';
+import { CartItem } from './CartItem';
+import "./cart.css";
 
 export const Cart = () => {
-
-  const { cart } = useCart()
+  
+  const storedDestinos = JSON.parse(localStorage.getItem('destinos'));
+  const { cartItems } = useContext(CartContext)
 
   return (
-    <section>
+    <section className='cart'>
       <h2>Carrito de Compras</h2>
-      <ul>
+      <ul className='cart'>
         {
-          cart.map((destino) => (
-            <li key={destino.id}>
-              {destino.name} - ${destino.price}
-            </li>
-          ))
+          destinos.map(destino => {
+            if (storedDestinos[destino.id] !== 0) {
+              return (
+                <CartItem
+                  key={destino.id}
+                  {...destino}
+                />
+              );
+            }
+          })
         }
       </ul>
     </section>
