@@ -12,7 +12,7 @@ export const HeroBanner = ({
   
   return (
     <div style={{
-      backgroundImage: `url(${heroImageUrl}`,
+      backgroundImage: `linear-gradient(to bottom,rgba(0, 0, 0, .35) 15%, rgba(0, 0, 0, .35) 25%), url(${heroImageUrl})`,
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',

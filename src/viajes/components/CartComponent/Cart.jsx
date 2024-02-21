@@ -17,7 +17,7 @@ export const Cart = () => {
 
   return (
     <>
-      <PageHeader page='about' />
+      <PageHeader page='cart' />
       <section className='cart py-16'>
         <h1 className='text-2xl font-bold mb-5'>Carrito de Compras</h1>
         <ul className='cart'>

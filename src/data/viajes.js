@@ -23,4 +23,10 @@ export const viajes  = [
     'title': 'Conoce mas sobre Viajecitos',
     'subtitle': 'Sepa quienes somos',
   },
+  {
+    'id': 'bg_cart',
+    'page': 'cart',
+    'title': '¿Listo para empezar tu viaje?',
+    'subtitle': '',
+  }
 ]
