@@ -35,7 +35,11 @@ export const CartProvider = ({ children }) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
   }
 
-  const contextValue = { cartItems, addToCart, removeFromCart, getTotalCartAmount }
+  const clearCart = () => {
+    setCartItems(getDefaultCart());
+  };
+
+  const contextValue = { cartItems, addToCart, removeFromCart, clearCart, getTotalCartAmount }
 
   console.log(cartItems)
 

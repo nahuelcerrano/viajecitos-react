@@ -11,7 +11,7 @@ import { destinos } from '../../../data';
 import "./cart.css";
 export const Cart = () => {
   
-  const { cartItems, getTotalCartAmount } = useContext(CartContext)
+  const { cartItems, clearCart, getTotalCartAmount } = useContext(CartContext)
   const totalAmount = getTotalCartAmount()
   const navigate = useNavigate()
 
@@ -40,7 +40,7 @@ export const Cart = () => {
             <div className='text-xl mb-5 checkout'>
               <p className='flex justify-center pb-5'>Subtotal: ${totalAmount}</p>
               <button onClick={() => navigate('/viajes/destinos')}>Seguir comprando</button>
-              <button onClick={() => navigate('/home')}>Terminar compra</button>
+              <button onClick={() => clearCart()}>Terminar compra</button>
             </div>
           ) : (
             <h2 className='text-lg font-bold mb-5'>Tu carrito de compras se encuentra vacio</h2>
