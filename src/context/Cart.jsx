@@ -15,9 +15,17 @@ const getDefaultCart = () => {
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(getDefaultCart())
 
-  useEffect(() => {
-    localStorage.setItem('destinos', JSON.stringify(cartItems));
-  }, [cartItems]);
+  const getTotalCartAmount = () => {
+    let totalAmount = 0
+    for (const itemId in cartItems) {
+      const quantity = cartItems[itemId];
+      if (quantity > 0) {
+        const destino = destinos.find((destino) => destino.id === itemId);
+        totalAmount += quantity * destino.price
+      }
+    }
+    return totalAmount
+  }
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
@@ -27,7 +35,9 @@ export const CartProvider = ({ children }) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
   }
 
-  const contextValue = {cartItems, addToCart, removeFromCart}
+  const contextValue = { cartItems, addToCart, removeFromCart, getTotalCartAmount }
+
+  console.log(cartItems)
 
   return (
     <CartContext.Provider value={contextValue}>
