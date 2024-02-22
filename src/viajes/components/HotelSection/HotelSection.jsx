@@ -24,10 +24,10 @@ export const HotelSection = ({ numCardstoShow }) => {
       </div>
       <div className={hotel.cardsContainer}>
         {
-          defaultDisplayedDestinations.map(countries => (
+          defaultDisplayedDestinations.map(hotel => (
             <ViajesCard
-              key = { countries.id }
-              { ... countries }
+              key = { hotel.id }
+              { ... hotel }
             />
           ))
         }
