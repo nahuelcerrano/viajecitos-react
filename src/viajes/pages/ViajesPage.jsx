@@ -7,7 +7,7 @@ import { PageHeader } from '../components/HeroBanner/PageHeader'
 import { ViajesSection, HotelSection } from '../components'
 import { ViajesAdSection } from '../components/ViajesSection/ViajesAdSection'
 
-export const TripPage = () => {
+export const ViajesPage = () => {
   return (
     <>
       <PageHeader page='viajes' />

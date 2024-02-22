@@ -5,7 +5,7 @@ import { Navbar } from '../../ui/components/Navbar'
 import { AboutPage } from '../pages/AboutPage'
 import { HomePage } from '../pages/HomePage'
 import { ServicePage } from '../pages/ServicePage'
-import { TripPage } from '../pages/TripPage'
+import { ViajesPage } from '../pages/ViajesPage'
 import { DestinosPage } from '../pages/DestinosPage'
 import { HotelesPage } from '../pages/HotelesPage'
 import { Cart } from '../components/CartComponent/Cart'
@@ -20,7 +20,7 @@ export const ViajesRoutes = () => {
           <Route path='home' element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='servicios' element={<ServicePage />} />
-          <Route path='viajes' element={<TripPage />} />
+          <Route path='viajes' element={<ViajesPage />} />
           <Route path='viajes/destinos' element={<DestinosPage />} />
           <Route path='viajes/hoteles' element={<HotelesPage />} />
           <Route path='compras' element={<Cart />}/>
