@@ -54,11 +54,11 @@ export const Navbar = () => {
           </li>
         </ul>
         <div className={ navStyles.buttons }>
-          <Link to="/contacto">
-            <Button radius="lg" className={ fixed ? 'bg-white text-black' : 'bg-rose-700 text-white' }>
+          <Button radius="lg" className={ fixed ? 'bg-white text-black' : 'bg-rose-700 text-white' }>
+            <Link to="/contacto">
               Contacto
-            </Button> 
-          </Link>
+            </Link>
+          </Button> 
           <Link to='/compras'>
             <BsFillCartFill className='ml-4' size={28}/>
           </Link>

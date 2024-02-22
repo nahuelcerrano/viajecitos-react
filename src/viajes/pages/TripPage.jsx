@@ -15,32 +15,32 @@ export const TripPage = () => {
       <main className={homeStyles.main}>
         <ViajesSection numCardsToShow={8}/>
         <div className='flex justify-center pt-5 pb-10'>
-          <Link to='/viajes/destinos'>
-            <Button 
-              color="primary" 
-              variant="shadow"
-              radius='medium'
-              size='lg'
-              className="bg-gradient-to-tr from-[#25aae1] to-[#30dd8a] text-white shadow-lg"
-            >
+          <Button 
+            color="primary" 
+            variant="shadow"
+            radius='medium'
+            size='lg'
+            className="bg-gradient-to-tr from-[#25aae1] to-[#30dd8a] text-white shadow-lg"
+          >
+            <Link to='/viajes/destinos'>
               Ver más
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
         <ViajesAdSection />
         <HotelSection numCardstoShow={8}/>
         <div className='flex justify-center pt-5 pb-10'>
-          <Link to='/viajes/hoteles'>
-            <Button 
-              color="primary" 
-              variant="shadow"
-              radius='medium'
-              size='lg'
-              className="bg-gradient-to-tr from-[#25aae1] to-[#30dd8a] text-white shadow-lg"
-            >
+          <Button 
+            color="primary" 
+            variant="shadow"
+            radius='medium'
+            size='lg'
+            className="bg-gradient-to-tr from-[#25aae1] to-[#30dd8a] text-white shadow-lg"
+          >
+            <Link to='/viajes/hoteles'>
               Ver más
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </main>
 
