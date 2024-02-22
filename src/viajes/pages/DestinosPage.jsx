@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+
+import { FiltersContext } from '../../context/Filters'
 
 import { PageHeader, ViajesSection } from '../components'
 import { DestinoFilters } from '../components/FiltersComponents/DestinoFilters'
 
 export const DestinosPage = () => {
+
+  const { setCurrentPage } = useContext(FiltersContext)
+
+  useEffect(() => {
+    setCurrentPage('DestinosPage')
+  
+    return () => {
+      setCurrentPage('default')
+    }
+  }, [])
+  
+
   return (
     <>
       <PageHeader page='viajes' />
