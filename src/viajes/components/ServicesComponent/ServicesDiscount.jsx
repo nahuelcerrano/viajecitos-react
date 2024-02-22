@@ -7,7 +7,6 @@ import servicesDiscount from './services.module.css'
 export const ServicesDiscount = () => {
   return (
     <section className='row'>
-      <h1 className='text-center text-2xl font-extrabold py-5'> Paquetes especiales para nuestros viajeros </h1>
       <div className={ servicesDiscount.container }>
         {
           ad_verano.map( card => (

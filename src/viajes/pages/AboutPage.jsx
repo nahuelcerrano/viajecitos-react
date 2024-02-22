@@ -1,6 +1,6 @@
 import React from 'react'
+
 import { PageHeader } from '../components/HeroBanner/PageHeader'
-import homeStyles from './home.module.css'
 import { AboutSection } from '../components/AboutSection/AboutSection'
 
 export const AboutPage = () => {
@@ -8,7 +8,7 @@ export const AboutPage = () => {
     <>
       <PageHeader page='about' />
 
-      <main className={ homeStyles.home }>
+      <main>
         <AboutSection />
       </main>
     </>

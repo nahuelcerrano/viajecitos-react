@@ -1,19 +1,29 @@
 import React from 'react'
 
-import { ViajesSection, HotelSection, AdSection } from '../components'
-import { PageHeader } from '../components/HeroBanner/PageHeader'
-import homeStyles from './home.module.css'
-import { ViajesAdSection } from '../components/ViajesSection/ViajesAdSection'
-import { Button } from '@nextui-org/react'
 import { Link } from 'react-router-dom'
+import { Button } from '@nextui-org/react'
+
+import { PageHeader } from '../components/HeroBanner/PageHeader'
+import { ViajesSection, HotelSection } from '../components'
+import { ViajesAdSection } from '../components/ViajesSection/ViajesAdSection'
 
 export const TripPage = () => {
   return (
     <>
       <PageHeader page='viajes' />
 
-      <main className={homeStyles.main}>
+      <main>
+        
+        <section className='text-center flex flex-col w-full pb-7 pt-10'>
+          <h2 className='text-center text-3xl font-bold py-7 mb-2.5'>
+            Nuestros viajes para usted
+          </h2>
+          <p className='text-gray-500 w-1/2 mx-auto'>
+            Destinos especiales y exoticos, con nuestro catalago de mas de 50 destinos
+          </p>
+        </section>
         <ViajesSection numCardsToShow={8}/>
+        
         <div className='flex justify-center pt-5 pb-10'>
           <Button 
             color="primary" 
@@ -27,8 +37,19 @@ export const TripPage = () => {
             </Link>
           </Button>
         </div>
+        
         <ViajesAdSection />
+        
+        <section className='text-center flex flex-col w-full pb-7 pt-10'>
+          <h2 className='text-center text-3xl font-bold py-7 mb-2.5'>
+            Los mejores hoteles
+          </h2>
+          <p className='text-gray-500 w-1/2 mx-auto'>
+            Los hoteles mas elegidos por nuestros viajeros.
+          </p>
+        </section>
         <HotelSection numCardstoShow={8}/>
+        
         <div className='flex justify-center pt-5 pb-10'>
           <Button 
             color="primary" 

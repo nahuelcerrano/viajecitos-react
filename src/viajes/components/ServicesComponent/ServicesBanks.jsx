@@ -5,9 +5,7 @@ import bankStyles from './services.module.css'
 
 export const ServicesBanks = () => {
   return (
-    <section>
-      <h1 className='text-center text-2xl font-extrabold py-5'>Ofrecemos estos beneficios de los siguientes bancos</h1>
-      <div className='row'>
+    <section className='row'>
         <div className={ bankStyles.card }>
           {
           banks.map( card => (
@@ -18,7 +16,6 @@ export const ServicesBanks = () => {
           ))
         }
         </div>
-      </div>
     </section>
   )
 }

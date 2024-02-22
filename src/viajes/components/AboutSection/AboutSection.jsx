@@ -2,9 +2,9 @@ import React from 'react'
 
 export const AboutSection = () => {
   return (
-    <section className="main_div row">
-      <h1 className='text-center text-2xl font-bold py-5'>Sobre Viajecitos</h1>
-      <p>
+    <section className="text-center flex flex-col w-full mb-16 pt-10">
+      <h1 className='text-center text-3xl font-bold py-7 mb-2.5'>Sobre Viajecitos</h1>
+      <p className='w-3/5 mx-auto'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sit, quae a facilis eveniet ea
         repellendus beatae, nostrum quia ex aut numquam possimus ab doloribus alias totam ad cumque,
         voluptate quos vero error cum nihil? Quia mollitia aliquid consectetur reprehenderit nemo a officiis
@@ -14,8 +14,8 @@ export const AboutSection = () => {
         eius saepe adipisci! Autem laborum perspiciatis beatae natus nemo tempore incidunt totam sunt
         dolores quis a asperiores, similique eum.</p>
       <hr/>
-      <h1 className='text-center text-2xl font-bold py-5'>Nuestro modo de trabajo</h1>
-      <p>
+      <h1 className='text-center text-3xl font-bold py-7 mb-2.5'>Nuestro modo de trabajo</h1>
+      <p className='w-3/5 mx-auto'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque sed est ipsum, laborum
         blanditiis fuga eos deleniti quam quo dolorum similique debitis quibusdam quae repellendus dolore
         omnis quia perferendis quidem perspiciatis nulla tempore! Molestias, exercitationem quasi
@@ -25,8 +25,8 @@ export const AboutSection = () => {
         eum veritatis non dicta, repellendus quo? Inventore praesentium laborum impedit et, qui laudantium
         asperiores cum, pariatur facere sunt incidunt magnam magni, placeat debitis.</p>
       <hr/>
-      <h1 className='text-center text-2xl font-bold py-5'>Seguridad ante todo</h1>
-      <p> 
+      <h1 className='text-center text-3xl font-bold py-7 mb-2.5'>Seguridad ante todo</h1>
+      <p className='w-3/5 mx-auto'> 
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque dolores illum, sapiente nostrum
         autem necessitatibus quae ut porro aut inventore dicta dignissimos natus, rerum repellat harum
         exercitationem velit corporis repellendus. Temporibus asperiores consectetur natus, ipsa ea nam
@@ -36,8 +36,8 @@ export const AboutSection = () => {
         accusamus nam? Obcaecati, temporibus a numquam voluptates esse natus? Asperiores dicta atque, non
         aperiam esse totam molestias officia quam fugit, delectus cumque in.</p>
       <hr/>
-      <h1 className='text-center text-2xl font-bold py-5'>Nuestros empleados</h1>
-      <p> 
+      <h1 className='text-center text-3xl font-bold py-7 mb-2.5'>Nuestros empleados</h1>
+      <p className='w-3/5 mx-auto'> 
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus praesentium ab
         consectetur quidem ex esse beatae nulla, accusantium, architecto impedit repudiandae possimus.
         Tenetur, molestias? Atque reiciendis voluptas vitae veritatis obcaecati debitis beatae quas

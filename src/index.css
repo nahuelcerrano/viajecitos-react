@@ -19,7 +19,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-color: #ebebeb;
-  font-family: 'Maven Pro', Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: 'Maven Pro', Arial ,sans-serif;
 }
 
 :root {
