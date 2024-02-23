@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button, Card, CardBody, Image } from '@nextui-org/react'
-import image from '/ads/verano_2.jpg'
 
 export const ToursCards = ({
   id,
@@ -17,41 +16,35 @@ export const ToursCards = ({
   return (
     <Card
       isBlurred
-      className="border-none bg-background/60 dark:bg-default-100/50 mb-10"
+      className="border-none bg-background/60 dark:bg-default-100/50 m-0"
       shadow="sm"
       radius='sm'
     >
-      <CardBody>
-        <div className="grid grid-cols-3 grid-rows-3 gap-0 items-center justify-center">
-          <div className="relative row-span-3 pr-5">
+      <CardBody className='p-0'>
+        <div className="grid grid-row-3 gap-5 items-center">
             <Image
               alt={ alt }
-              className="object-cover"
+              className="row-span-1 w-full object-cover"
               shadow="md"
+              radius='none'
               src={ tourUrl }
-              width="100%"
             />
-          </div>
 
-          <div className="col-span-2">
-            <p className="text-lg font-extrabold">Tour de { name } - Tour Privado</p>
+          <div className="row-span-1 pb-5 px-4">
             <p className='text-small'>Duración: 4 horas / Incluye guías</p>
-          </div>
-          
-          <div className="col-span-2">
-            <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+
+            <p className="text-lg font-extrabold mt-3">Tour de { name } - Tour Privado</p>
+
+            <div className='mt-3'>
+              <span className='mr-5 bg-[#30a071] p-1.5 border-2 border-solid border-black rounded-lg font-bold'>9.0</span>
+              <span className='text-lg'>★ ★ ★ ★ ★</span>
+            </div>
+
+            <p className="text-lg mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
-          <div className='col-span-2'>
-            <p className='py-2'>Desde { price }$ - { discount }% OFF con { bank } </p>
-            <Button 
-              size='sm' 
-              color='success'
-              radius='sm'
-              className='mr-5'
-            >
-              Comprar
-            </Button>
+          <div className='row-span-1 pb-3 pl-4'>
+            <p className='font-medium'>Desde <span className='text-lg'>${ price }</span> ~ { discount }% OFF con { bank } </p>
           </div>
 
         </div>

@@ -12,6 +12,10 @@ export const ServicePage = () => {
 
       <main>
         <section className='text-center flex flex-col w-full pb-7 pt-10'>
+          <h1 className='text-center text-3xl font-bold py-7 mb-2.5'>Tours Guiados en varios destinos</h1>
+        </section>
+        <ServicesTours />
+        <section className='text-center flex flex-col w-full pb-7 pt-10'>
           <h1 className='text-center text-3xl font-bold py-7 mb-2.5'> Paquetes especiales para nuestros viajeros </h1>
         </section>
         <ServicesDiscount />
@@ -19,10 +23,6 @@ export const ServicePage = () => {
           <h1 className='text-center text-3xl font-bold py-7 mb-2.5'>Ofrecemos estos beneficios de los siguientes bancos</h1>
         </section>
         <ServicesBanks />
-        <section className='text-center flex flex-col w-full pb-7 pt-10'>
-          <h1 className='text-center text-3xl font-bold py-7 mb-2.5'>Tours Guiados en varios destinos</h1>
-        </section>
-        <ServicesTours />
       </main>
     </>
   )
