@@ -17,16 +17,6 @@ export const ServicesDiscount = () => {
           ))
         }
       </div>
-      <div className={ servicesDiscount.container }>
-        {
-          ad_verano.map( card => (
-            <OfertaCard
-              key={ card.id }
-              {...card}
-            />
-          ))
-        }
-      </div>
     </section>
   )
 }

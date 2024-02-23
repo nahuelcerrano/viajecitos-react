@@ -57,4 +57,22 @@ export const ad_verano = [
     'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui culpa pariatur velit',
     'off': 15,
   },
+  {
+    'id': 'verano_4',
+    'title': 'Rio de janeiro',
+    'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui culpa pariatur velit',
+    'off': 20,
+  },
+  {
+    'id': 'verano_5',
+    'title': 'Porto de Galinhas',
+    'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui culpa pariatur velit',
+    'off': 5,
+  },
+  {
+    'id': 'verano_6',
+    'title': 'Mendoza',
+    'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui culpa pariatur velit',
+    'off': 25,
+  },
 ]
