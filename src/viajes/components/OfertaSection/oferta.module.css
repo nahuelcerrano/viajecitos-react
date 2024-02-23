@@ -1,7 +1,6 @@
 .container {
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5vh 0 20vh;
 }
 
 .title {
