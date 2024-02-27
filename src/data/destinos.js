@@ -165,7 +165,9 @@ export const destinos = [
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "price": "670",
     "discount": 20,
-    "bank": "American Express"
+    "bank": "American Express",
+    "rating": 8.3,
+    'guide': 'Duración: 2 horas / Incluye guías',
   },
   {
     "id": "country15",
@@ -176,8 +178,10 @@ export const destinos = [
     "name": "París",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "price": "780",
-    "discount": 20,
-    "bank": "American Express"
+    "discount": 10,
+    "bank": "Santander",
+    "rating": 7.4,
+    'guide': 'Duración: 1 horas / No incluye guías',
   },
   {
     "id": "country16",
@@ -188,8 +192,10 @@ export const destinos = [
     "name": "Berlín",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "price": "850",
-    "discount": 20,
-    "bank": "American Express"
+    "discount": 14,
+    "bank": "American Express",
+    "rating": 8.6,
+    'guide': 'Duración: 3 horas / Incluye guías',
   },
   {
     "id": "country17",
@@ -200,8 +206,10 @@ export const destinos = [
     "name": "Nueva Delhi",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "price": "440",
-    "discount": 20,
-    "bank": "American Express"
+    "discount": 18,
+    "bank": "American Express",
+    "rating": 7.2,
+    'guide': 'Duración: 2 horas / Incluye guías',
   },
   {
     "id": "country18",
@@ -212,8 +220,10 @@ export const destinos = [
     "name": "Roma",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "price": "650",
-    "discount": 20,
-    "bank": "American Express"
+    "discount": 15,
+    "bank": "BBVA",
+    "rating": 8.1,
+    'guide': 'Duración: 1 horas / No incluye guías',
   },
   {
     "id": "country19",
@@ -225,7 +235,9 @@ export const destinos = [
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "price": "780",
     "discount": 20,
-    "bank": "American Express"
+    "bank": "BBVA",
+    "rating": 8.9,
+    'guide': 'Duración: 2 horas / Incluye guías',
   },
   {
     "id": "country20",
