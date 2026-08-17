@@ -1,7 +1,7 @@
 import React from 'react'
 import newsletter from './footer.module.css'
-import { Button } from '@nextui-org/react'
-import { Input } from '@nextui-org/react'
+import { Button } from '@heroui/react'
+import { Input } from '@heroui/react'
 
 export const Newsletter = () => {
   return (
@@ -20,7 +20,7 @@ export const Newsletter = () => {
             />
             <Button radius="none" color='success' className='h-100'>
               Enviar
-            </Button> 
+            </Button>
           </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { Card, CardBody } from '@nextui-org/react'
+import { Card, CardBody } from '@heroui/react'
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -10,12 +10,12 @@ export const ContactFormRedic = () => {
     const timer = setTimeout(() => {
       navigate('/')
     }, 3500)
-  
+
     return () => {
       clearTimeout(timer)
     }
   }, [navigate])
-  
+
 
   return (
     <section className='bg-form h-screen'>

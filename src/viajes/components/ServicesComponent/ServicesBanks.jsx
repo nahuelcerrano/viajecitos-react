@@ -1,12 +1,12 @@
 import React from 'react'
-import { Card, CardBody, CardFooter, CardHeader, Divider, Image } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, CardHeader, Divider, Image } from "@heroui/react";
 import { creditCard, debitCard, banks } from '../../../data'
 
 export const ServicesBanks = () => {
   return (
     <section className='grid grid-cols-3 row pb-10 gap-x-[30px] gap-y-[50px]'>
 
-      <Card 
+      <Card
         radius="sm"
         shadow='sm'
         isBlurred
@@ -35,9 +35,9 @@ export const ServicesBanks = () => {
             }
           </ul>
         </CardBody>
-        
+
         <Divider />
-        
+
         <CardFooter className='grid-row-3 h-[100px]'>
           <div className='p-4'>
             <p>Hasta 6 cuotas con estas tarjetas</p>
@@ -46,7 +46,7 @@ export const ServicesBanks = () => {
         </CardFooter>
       </Card>
 
-      <Card 
+      <Card
         radius="sm"
         shadow='sm'
         isBlurred
@@ -75,9 +75,9 @@ export const ServicesBanks = () => {
             }
           </ul>
         </CardBody>
-        
+
         <Divider />
-        
+
         <CardFooter className='grid-row-3 h-[100px]'>
           <div className='p-4'>
             <p>Obtén 10% de descuento en la primera compra</p>
@@ -85,7 +85,7 @@ export const ServicesBanks = () => {
         </CardFooter>
       </Card>
 
-      <Card 
+      <Card
         radius="sm"
         shadow='sm'
         isBlurred
@@ -114,9 +114,9 @@ export const ServicesBanks = () => {
             }
           </ul>
         </CardBody>
-        
+
         <Divider />
-        
+
         <CardFooter className='grid-row-3 h-[100px]'>
           <div className='p-4'>
             <p>25% de descuento en 1 cuota</p>

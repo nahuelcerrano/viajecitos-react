@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-import { Button } from '@nextui-org/react'
+import { Button } from '@heroui/react'
 
 import { PageHeader } from '../components/HeroBanner/PageHeader'
 import { ViajesSection, HotelSection } from '../components'
@@ -13,7 +13,7 @@ export const ViajesPage = () => {
       <PageHeader page='viajes' />
 
       <main>
-        
+
         <section className='text-center flex flex-col w-full pb-7 pt-10'>
           <h2 className='text-center text-3xl font-bold py-7 mb-2.5'>
             Nuestros viajes para usted
@@ -23,10 +23,10 @@ export const ViajesPage = () => {
           </p>
         </section>
         <ViajesSection numCardsToShow={8}/>
-        
+
         <div className='flex justify-center pt-5 pb-10'>
-          <Button 
-            color="primary" 
+          <Button
+            color="primary"
             variant="shadow"
             radius='medium'
             size='lg'
@@ -37,9 +37,9 @@ export const ViajesPage = () => {
             </Link>
           </Button>
         </div>
-        
+
         <ViajesAdSection />
-        
+
         <section className='text-center flex flex-col w-full pb-7 pt-10'>
           <h2 className='text-center text-3xl font-bold py-7 mb-2.5'>
             Los mejores hoteles
@@ -49,10 +49,10 @@ export const ViajesPage = () => {
           </p>
         </section>
         <HotelSection numCardstoShow={8}/>
-        
+
         <div className='flex justify-center pt-5 pb-10'>
-          <Button 
-            color="primary" 
+          <Button
+            color="primary"
             variant="shadow"
             radius='medium'
             size='lg'

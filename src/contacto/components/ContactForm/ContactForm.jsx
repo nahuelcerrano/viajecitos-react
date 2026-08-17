@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Navigate, useNavigate } from 'react-router-dom'
-import { Input, Card, CardHeader, CardBody, CardFooter, Divider, Button } from '@nextui-org/react';
+import { Input, Card, CardHeader, CardBody, CardFooter, Divider, Button } from '@heroui/react';
 import { EyeFilledIcon, EyeSlashFilledIcon } from "./svg";
 
 
@@ -47,7 +47,7 @@ export const ContactForm = () => {
           <CardBody>
             <div className="w-full flex flex-col py-10 px-16 gap-10">
               <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-5">
-                <Input 
+                <Input
                   {...register('name', {
                     required: 'El nombre es requerido',
                     pattern: {
@@ -70,8 +70,8 @@ export const ContactForm = () => {
                     ]
                 }} type='text' variant='bordered' radius='sm' label='Name'
                 description={errors.name && <span className='text-[#DE0B0F]'>{errors.name.message}</span>}/>
-                
-                <Input 
+
+                <Input
                   {...register('lastname', {
                     required: 'El apellido es requerido',
                     pattern: {
@@ -97,7 +97,7 @@ export const ContactForm = () => {
                       'text-xl'
                     ]
                 }} type='text' variant='bordered' radius='sm' label='Last Name'
-                description={errors.lastname && <span className='text-[#DE0B0F]'>{errors.lastname.message}</span>}/>  
+                description={errors.lastname && <span className='text-[#DE0B0F]'>{errors.lastname.message}</span>}/>
               </div>
               <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-5">
                 <Input
@@ -194,13 +194,13 @@ export const ContactForm = () => {
                       'dark:hover:bg-default/70',
                     ]
                   }} type='text' variant='bordered' radius='sm' label='Number'
-                  description={errors.number && <span className='text-[#DE0B0F]'>{errors.number.message}</span>}/>        
+                  description={errors.number && <span className='text-[#DE0B0F]'>{errors.number.message}</span>}/>
               </div>
             </div>
           </CardBody>
           <Divider/>
           <CardFooter className='flex justify-center py-5 '>
-            {/* <Button 
+            {/* <Button
               variant="shadow"
               radius='md'
               className='bg-gradient-to-tr from-green-400 to-green-600 text-white shadow-lg px-16'

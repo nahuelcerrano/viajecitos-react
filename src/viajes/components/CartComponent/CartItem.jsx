@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../../context/Cart'
-import { Button, Card, CardBody, Image } from '@nextui-org/react'
+import { Button, Card, CardBody, Image } from '@heroui/react'
 
 export const CartItem = ({
   id,
@@ -44,8 +44,8 @@ export const CartItem = ({
             </div>
 
             <div className='col-span-1'>
-              <Button 
-                size='sm' 
+              <Button
+                size='sm'
                 color='success'
                 radius='sm'
                 className='text-lg font-medium'
@@ -54,8 +54,8 @@ export const CartItem = ({
                 -
               </Button>
               <span className='mx-4 text-lg font-medium'>{ cartItems[id] }</span>
-              <Button 
-                size='sm' 
+              <Button
+                size='sm'
                 color='success'
                 radius='sm'
                 className='text-lg font-medium'

@@ -1,21 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router-dom";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import { BsFillCartFill } from "react-icons/bs";
 
 import navStyles from "./navbar.module.css";
 
 
 export const Navbar = () => {
-  
+
   const [fixed, setFixed] = useState(false)
 
   const navbar = useRef()
   const navbarOffset = useRef()
 
   useEffect(() => {
-    
+
     const handleScroll = () => {
       const value = navbarOffset.current.clientHeight
 
@@ -24,12 +24,12 @@ export const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll)
 
-    return () => 
+    return () =>
       window.removeEventListener('scroll', handleScroll)
   },[])
 
   return (
-    <div 
+    <div
       className={`${navStyles.header}  ${fixed && navStyles.fixed} ${fixed && 'animate__animated animate__slideInDown'} ${!fixed && 'animate__animated animate__fadeIn animate__faster'}`}
       ref={navbarOffset}>
       <nav
@@ -58,7 +58,7 @@ export const Navbar = () => {
             <Link to="/contacto">
               Contacto
             </Link>
-          </Button> 
+          </Button>
           <Link to='/compras'>
             <BsFillCartFill className='ml-4' size={28}/>
           </Link>

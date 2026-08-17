@@ -2,12 +2,12 @@ import React, { useId } from 'react'
 
 import filterStyles from './filter.module.css'
 import { useFilters } from '../../hooks/useFilters'
-import { Select, SelectItem } from '@nextui-org/react'
+import { Select, SelectItem } from '@heroui/react'
 
 export const DestinoFilters = () => {
 
   const { filters, setFilters } = useFilters()
-  
+
   const minPriceFilterId = useId()
   const continentFilterId = useId()
 
@@ -28,10 +28,10 @@ export const DestinoFilters = () => {
 
   return (
     <>
-      <section className={filterStyles.filters}> 
+      <section className={filterStyles.filters}>
         <div>
           <label htmlFor={minPriceFilterId}>Precio</label>
-          <input 
+          <input
             type="range"
             id={minPriceFilterId}
             min='0'
@@ -56,7 +56,7 @@ export const DestinoFilters = () => {
               <option value="america del norte">América del Norte</option>
             </select>
           </label>
-        </div> 
+        </div>
 
       </section>
     </>
